@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "garduite:silver_block",
+    "#forge:storage_blocks/silver"
+  ]
+}
