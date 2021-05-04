@@ -22,8 +22,12 @@ public class modItemTagProvider extends ItemTagsProvider{
         copy(modTags.Blocks.STORAGE_BLOCKS_SILVER, modTags.Items.STORAGE_BLOCKS_SILVER);
         copy(Tags.Blocks.STORAGE_BLOCKS, modTags.Items.STORAGE_BLOCKS_SILVER);
 
+
         tag(modTags.Items.INGOT_SILVER).add(moditems.SILVER_INGOT.get());
         tag(Tags.Items.INGOTS).addTag(modTags.Items.INGOT_SILVER);
+
+        tag(modTags.Items.ORECHUNK_SILVER).add(moditems.SILVER_ORE_CHUNK.get());
+        tag(modTags.Items.ORECHUNK_IRON).add(moditems.IRON_ORE_CHUNK.get());
 
     }
     

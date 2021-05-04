@@ -30,6 +30,9 @@ public class modTags {
 
         public static final ITag.INamedTag<Item> INGOT_SILVER = forge("ingots/silver");
 
+        public static final ITag.INamedTag<Item> ORECHUNK_SILVER = mod("orechunk/silver");
+        public static final ITag.INamedTag<Item> ORECHUNK_IRON = mod("orechunk/iron");
+
         public static final ITag.INamedTag<Item> forge(String path)
         {
             return ItemTags.createOptional(new ResourceLocation("forge", path));

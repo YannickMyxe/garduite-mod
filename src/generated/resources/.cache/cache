@@ -15,3 +15,5 @@ a68c6de6ef36f81f3f3b18740c79b09583ed31f1 data/forge/tags/blocks/storage_blocks.j
 75d054d898f5dc46449ce05281caf767d75b0dea data/forge/tags/items/ingots/silver.json
 1b98c904b70e8b0c0b287518d6bf6466f78cc63f data/forge/tags/items/ores/silver.json
 005c8d6f81667b84bdf3c6624a6b9ffdcce7abfe data/forge/tags/items/storage_blocks/silver.json
+31dae65e9cbc9a5769716925971fd9ec59c9b521 data/garduite/tags/items/orechunk/iron.json
+800fc1e86946ece3e27bd57ec6ac550bbc4f8a82 data/garduite/tags/items/orechunk/silver.json
