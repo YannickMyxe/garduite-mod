@@ -19,6 +19,7 @@ public class registries {
 
         moditems.register();
         modblocks.register();
+
     }
 
 }
