@@ -81,6 +81,24 @@ public class modRecipeProvider extends RecipeProvider {
         CookingRecipeBuilder.blasting(Ingredient.of(moditems.IRON_ORE_CHUNK.get()), Items.IRON_INGOT, 0.7f, 100)
         .unlockedBy("has_item", has(moditems.IRON_ORE_CHUNK.get()))
         .save(consumer, modid("iron_ore_chunk_blasting"));
+
+        // Cooking copper
+        CookingRecipeBuilder.cooking(Ingredient.of(modblocks.COPPER_ORE.get()), moditems.COPPER_INGOT.get(), 0.7f, 200, CookingRecipeSerializer.SMELTING_RECIPE)
+        .unlockedBy("has_item", has(modblocks.COPPER_ORE.get()))
+        .save(consumer, modid("copper_ore_smelting"));   
+
+        CookingRecipeBuilder.blasting(Ingredient.of(modblocks.COPPER_ORE.get()), moditems.COPPER_INGOT.get(), 0.7f, 100)
+        .unlockedBy("has_item", has(modblocks.COPPER_ORE.get()))
+        .save(consumer, modid("copper_ore_blasting"));
+        
+        CookingRecipeBuilder.cooking(Ingredient.of(moditems.COPPER_ORE_CHUNK.get()), moditems.COPPER_INGOT.get(), 0.7f, 200, CookingRecipeSerializer.SMELTING_RECIPE)
+        .unlockedBy("has_item", has(moditems.COPPER_ORE_CHUNK.get()))
+        .save(consumer, modid("copper_ore_chunk_smelting"));
+
+        CookingRecipeBuilder.blasting(Ingredient.of(moditems.COPPER_ORE_CHUNK.get()), moditems.COPPER_INGOT.get(), 0.7f, 100)
+        .unlockedBy("has_item", has(moditems.COPPER_ORE_CHUNK.get()))
+        .save(consumer, modid("copper_ore_chunk_blasting"));
+
     }
 
     private static ResourceLocation modid(String path) {
