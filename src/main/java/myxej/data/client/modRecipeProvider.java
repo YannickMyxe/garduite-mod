@@ -26,78 +26,111 @@ public class modRecipeProvider extends RecipeProvider {
 
         // SILVER
         ShapelessRecipeBuilder.shapeless(moditems.SILVER_INGOT.get(), 9)
-        .requires(modblocks.SILVER_BLOCK.get())
-        .unlockedBy("has_item", has(moditems.SILVER_INGOT.get()))
-        .save(consumer)
+            .requires(modblocks.SILVER_BLOCK.get())
+            .unlockedBy("has_item", has(moditems.SILVER_INGOT.get()))
+            .save(consumer)
         ;
 
         ShapedRecipeBuilder.shaped(modblocks.SILVER_BLOCK.get())
-        .define('#', moditems.SILVER_INGOT.get())
-        .pattern("###")
-        .pattern("###")
-        .pattern("###")
-        .unlockedBy("has_item", has(moditems.SILVER_INGOT.get()))
-        .save(consumer)
+            .define('#', moditems.SILVER_INGOT.get())
+            .pattern("###")
+            .pattern("###")
+            .pattern("###")
+            .unlockedBy("has_item", has(moditems.SILVER_INGOT.get()))
+            .save(consumer)
         ;
 
         // COPPER
         ShapelessRecipeBuilder.shapeless(moditems.COPPER_INGOT.get(), 9)
-        .requires(modblocks.COPPER_BLOCK.get())
-        .unlockedBy("has_item", has(moditems.COPPER_INGOT.get()))
-        .save(consumer)
+            .requires(modblocks.COPPER_BLOCK.get())
+            .unlockedBy("has_item", has(moditems.COPPER_INGOT.get()))
+            .save(consumer)
         ;
 
         ShapedRecipeBuilder.shaped(modblocks.COPPER_BLOCK.get())
-        .define('#', moditems.COPPER_INGOT.get())
-        .pattern("###")
-        .pattern("###")
-        .pattern("###")
-        .unlockedBy("has_item", has(moditems.COPPER_INGOT.get()))
-        .save(consumer)
+            .define('#', moditems.COPPER_INGOT.get())
+            .pattern("###")
+            .pattern("###")
+            .pattern("###")
+            .unlockedBy("has_item", has(moditems.COPPER_INGOT.get()))
+            .save(consumer)
+        ;
+
+        // LEAD
+        ShapelessRecipeBuilder.shapeless(moditems.LEAD_INGOT.get(), 9)
+            .requires(modblocks.LEAD_BLOCK.get())
+            .unlockedBy("has_item", has(moditems.LEAD_INGOT.get()))
+            .save(consumer)
+        ;
+
+        ShapedRecipeBuilder.shaped(modblocks.LEAD_BLOCK.get())
+            .define('#', moditems.LEAD_INGOT.get())
+            .pattern("###")
+            .pattern("###")
+            .pattern("###")
+            .unlockedBy("has_item", has(moditems.LEAD_INGOT.get()))
+            .save(consumer)
         ;
 
         // Cooking silver
         CookingRecipeBuilder.cooking(Ingredient.of(modblocks.SILVER_ORE.get()), moditems.SILVER_INGOT.get(), 0.7f, 200, CookingRecipeSerializer.SMELTING_RECIPE)
-        .unlockedBy("has_item", has(modblocks.SILVER_ORE.get()))
-        .save(consumer, modid("silver_ore_smelting"));   
+            .unlockedBy("has_item", has(modblocks.SILVER_ORE.get()))
+            .save(consumer, modid("silver_ore_smelting"));   
 
         CookingRecipeBuilder.blasting(Ingredient.of(modblocks.SILVER_ORE.get()), moditems.SILVER_INGOT.get(), 0.7f, 100)
-        .unlockedBy("has_item", has(modblocks.SILVER_ORE.get()))
-        .save(consumer, modid("silver_ore_blasting"));
+            .unlockedBy("has_item", has(modblocks.SILVER_ORE.get()))
+            .save(consumer, modid("silver_ore_blasting"));
         
         CookingRecipeBuilder.cooking(Ingredient.of(moditems.SILVER_ORE_CHUNK.get()), moditems.SILVER_INGOT.get(), 0.7f, 200, CookingRecipeSerializer.SMELTING_RECIPE)
-        .unlockedBy("has_item", has(moditems.SILVER_ORE_CHUNK.get()))
-        .save(consumer, modid("silver_ore_chunk_smelting"));
+            .unlockedBy("has_item", has(moditems.SILVER_ORE_CHUNK.get()))
+            .save(consumer, modid("silver_ore_chunk_smelting"));
 
         CookingRecipeBuilder.blasting(Ingredient.of(moditems.SILVER_ORE_CHUNK.get()), moditems.SILVER_INGOT.get(), 0.7f, 100)
-        .unlockedBy("has_item", has(moditems.SILVER_ORE_CHUNK.get()))
-        .save(consumer, modid("silver_ore_chunk_blasting"));
-        
+            .unlockedBy("has_item", has(moditems.SILVER_ORE_CHUNK.get()))
+            .save(consumer, modid("silver_ore_chunk_blasting"));
+            
         // Cooking iron
         CookingRecipeBuilder.cooking(Ingredient.of(moditems.IRON_ORE_CHUNK.get()), Items.IRON_INGOT, 0.7f, 200, CookingRecipeSerializer.SMELTING_RECIPE)
-        .unlockedBy("has_item", has(moditems.IRON_ORE_CHUNK.get()))
-        .save(consumer, modid("iron_ore_chunk_smelting"));
+            .unlockedBy("has_item", has(moditems.IRON_ORE_CHUNK.get()))
+            .save(consumer, modid("iron_ore_chunk_smelting"));
 
         CookingRecipeBuilder.blasting(Ingredient.of(moditems.IRON_ORE_CHUNK.get()), Items.IRON_INGOT, 0.7f, 100)
-        .unlockedBy("has_item", has(moditems.IRON_ORE_CHUNK.get()))
-        .save(consumer, modid("iron_ore_chunk_blasting"));
+            .unlockedBy("has_item", has(moditems.IRON_ORE_CHUNK.get()))
+            .save(consumer, modid("iron_ore_chunk_blasting"));
 
         // Cooking copper
         CookingRecipeBuilder.cooking(Ingredient.of(modblocks.COPPER_ORE.get()), moditems.COPPER_INGOT.get(), 0.7f, 200, CookingRecipeSerializer.SMELTING_RECIPE)
-        .unlockedBy("has_item", has(modblocks.COPPER_ORE.get()))
-        .save(consumer, modid("copper_ore_smelting"));   
+            .unlockedBy("has_item", has(modblocks.COPPER_ORE.get()))
+            .save(consumer, modid("copper_ore_smelting"));   
 
         CookingRecipeBuilder.blasting(Ingredient.of(modblocks.COPPER_ORE.get()), moditems.COPPER_INGOT.get(), 0.7f, 100)
-        .unlockedBy("has_item", has(modblocks.COPPER_ORE.get()))
-        .save(consumer, modid("copper_ore_blasting"));
+            .unlockedBy("has_item", has(modblocks.COPPER_ORE.get()))
+            .save(consumer, modid("copper_ore_blasting"));
         
         CookingRecipeBuilder.cooking(Ingredient.of(moditems.COPPER_ORE_CHUNK.get()), moditems.COPPER_INGOT.get(), 0.7f, 200, CookingRecipeSerializer.SMELTING_RECIPE)
-        .unlockedBy("has_item", has(moditems.COPPER_ORE_CHUNK.get()))
-        .save(consumer, modid("copper_ore_chunk_smelting"));
+            .unlockedBy("has_item", has(moditems.COPPER_ORE_CHUNK.get()))
+            .save(consumer, modid("copper_ore_chunk_smelting"));
 
         CookingRecipeBuilder.blasting(Ingredient.of(moditems.COPPER_ORE_CHUNK.get()), moditems.COPPER_INGOT.get(), 0.7f, 100)
-        .unlockedBy("has_item", has(moditems.COPPER_ORE_CHUNK.get()))
-        .save(consumer, modid("copper_ore_chunk_blasting"));
+            .unlockedBy("has_item", has(moditems.COPPER_ORE_CHUNK.get()))
+            .save(consumer, modid("copper_ore_chunk_blasting"));
+
+        // Cooking lead
+        CookingRecipeBuilder.cooking(Ingredient.of(modblocks.LEAD_ORE.get()), moditems.LEAD_INGOT.get(), 0.7f, 200, CookingRecipeSerializer.SMELTING_RECIPE)
+            .unlockedBy("has_item", has(modblocks.LEAD_ORE.get()))
+            .save(consumer, modid("lead_ore_smelting"));   
+
+        CookingRecipeBuilder.blasting(Ingredient.of(modblocks.LEAD_ORE.get()), moditems.LEAD_INGOT.get(), 0.7f, 100)
+            .unlockedBy("has_item", has(modblocks.LEAD_ORE.get()))
+            .save(consumer, modid("lead_ore_blasting"));
+        
+        CookingRecipeBuilder.cooking(Ingredient.of(moditems.LEAD_ORE_CHUNK.get()), moditems.LEAD_INGOT.get(), 0.7f, 200, CookingRecipeSerializer.SMELTING_RECIPE)
+            .unlockedBy("has_item", has(moditems.LEAD_ORE_CHUNK.get()))
+            .save(consumer, modid("lead_ore_chunk_smelting"));
+
+        CookingRecipeBuilder.blasting(Ingredient.of(moditems.LEAD_ORE_CHUNK.get()), moditems.LEAD_INGOT.get(), 0.7f, 100)
+            .unlockedBy("has_item", has(moditems.LEAD_ORE_CHUNK.get()))
+            .save(consumer, modid("lead_ore_chunk_blasting"));
 
     }
 

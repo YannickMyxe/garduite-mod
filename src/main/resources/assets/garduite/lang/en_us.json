@@ -7,5 +7,9 @@
     "item.garduite.copper_ingot": "Copper Ingot",
     "item.garduite.copper_ore_chunk": "Copper Ore Chunk",
     "block.garduite.copper_ore": "Copper Ore",
-    "block.garduite.copper_block": "Copper Block"
+    "block.garduite.copper_block": "Copper Block",
+    "item.garduite.lead_ingot": "lead Ingot",
+    "item.garduite.lead_ore_chunk": "lead Ore Chunk",
+    "block.garduite.lead_ore": "lead Ore",
+    "block.garduite.lead_block": "lead Block"
 }

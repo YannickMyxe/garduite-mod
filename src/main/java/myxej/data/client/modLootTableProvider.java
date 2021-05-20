@@ -43,15 +43,22 @@ public class modLootTableProvider extends LootTableProvider{
      {
         @Override
         protected void addTables() {
+            // SILVER
             dropSelf(modblocks.SILVER_BLOCK.get());
             this.add(modblocks.SILVER_ORE.get(), (ModBlockLootTable) -> {
                 return createOreDrop(ModBlockLootTable, moditems.SILVER_ORE_CHUNK.get());
-             });
-            
+            });
+            // COPPER
             dropSelf(modblocks.COPPER_BLOCK.get());
             this.add(modblocks.COPPER_ORE.get(), (ModBlockLootTable) -> {
                  return createOreDrop(ModBlockLootTable, moditems.COPPER_ORE_CHUNK.get());
-              });
+            });
+            // LEAD
+            dropSelf(modblocks.LEAD_BLOCK.get());
+            this.add(modblocks.LEAD_ORE.get(), (ModBlockLootTable) -> {
+                return createOreDrop(ModBlockLootTable, moditems.LEAD_ORE_CHUNK.get());
+            });
+
         }
         
         @Override

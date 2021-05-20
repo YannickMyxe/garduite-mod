@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "garduite:block/lead_block"
+    }
+  }
+}

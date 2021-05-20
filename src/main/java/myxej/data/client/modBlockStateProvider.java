@@ -22,6 +22,10 @@ public class modBlockStateProvider extends BlockStateProvider{
         // COPPER
         simpleBlock(modblocks.COPPER_BLOCK.get());
         simpleBlock(modblocks.COPPER_ORE.get());
+
+        // LEAD
+        simpleBlock(modblocks.LEAD_BLOCK.get());
+        simpleBlock(modblocks.LEAD_ORE.get());
     }
     
 }

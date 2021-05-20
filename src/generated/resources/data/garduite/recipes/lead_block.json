@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "garduite:lead_ingot"
+    }
+  },
+  "result": {
+    "item": "garduite:lead_block"
+  }
+}

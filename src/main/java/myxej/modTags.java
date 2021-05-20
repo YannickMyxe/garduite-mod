@@ -18,6 +18,10 @@ public class modTags {
         public static final ITag.INamedTag<Block> ORES_COPPER = forge("ores/copper");
         public static final ITag.INamedTag<Block> STORAGE_BLOCKS_COPPER = forge("storage_blocks/copper");
 
+        // LEAD
+        public static final ITag.INamedTag<Block> ORES_LEAD = forge("ores/lead");
+        public static final ITag.INamedTag<Block> STORAGE_BLOCKS_LEAD = forge("storage_blocks/lead");
+
         // CUSTOM FUNCTIONS
         public static final ITag.INamedTag<Block> forge(String path)
         {
@@ -45,6 +49,12 @@ public class modTags {
         public static final ITag.INamedTag<Item> STORAGE_BLOCKS_COPPER = forge("storage_blocks/copper");
         public static final ITag.INamedTag<Item> INGOT_COPPER = forge("ingots/copper");
         public static final ITag.INamedTag<Item> ORECHUNK_COPPER = mod("orechunk/copper");
+
+        // LEAD
+        public static final ITag.INamedTag<Item> ORES_LEAD = forge("ores/lead");
+        public static final ITag.INamedTag<Item> STORAGE_BLOCKS_LEAD = forge("storage_blocks/lead");
+        public static final ITag.INamedTag<Item> INGOT_LEAD = forge("ingots/lead");
+        public static final ITag.INamedTag<Item> ORECHUNK_LEAD = mod("orechunk/lead");
 
 
         //  Custom functions

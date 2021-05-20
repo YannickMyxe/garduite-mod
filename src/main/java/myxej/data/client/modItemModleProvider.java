@@ -26,6 +26,9 @@ public class modItemModleProvider extends ItemModelProvider{
         // COPPER
         withExistingParent("copper_block", modLoc("block/copper_block"));
         withExistingParent("copper_ore", modLoc("block/copper_ore"));
+        // LEAD
+        withExistingParent("lead_block", modLoc("block/lead_block"));
+        withExistingParent("lead_ore", modLoc("block/lead_ore"));
 
         ModelFile itemsGenerated = getExistingFile(mcLoc("item/generated"));
         builder(itemsGenerated, "silver_ingot");
@@ -33,6 +36,8 @@ public class modItemModleProvider extends ItemModelProvider{
         builder(itemsGenerated, "iron_ore_chunk");
         builder(itemsGenerated, "copper_ingot");
         builder(itemsGenerated, "copper_ore_chunk");
+        builder(itemsGenerated, "lead_ingot");
+        builder(itemsGenerated, "lead_ore_chunk");
     }
     
     private ItemModelBuilder builder(ModelFile modelfile, String name)

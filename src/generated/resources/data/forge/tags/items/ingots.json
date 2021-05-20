@@ -2,6 +2,7 @@
   "replace": false,
   "values": [
     "#forge:ingots/silver",
-    "#forge:ingots/copper"
+    "#forge:ingots/copper",
+    "#forge:ingots/lead"
   ]
 }

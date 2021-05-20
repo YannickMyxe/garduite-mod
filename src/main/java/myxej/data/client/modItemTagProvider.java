@@ -29,16 +29,25 @@ public class modItemTagProvider extends ItemTagsProvider{
         copy(modTags.Blocks.STORAGE_BLOCKS_COPPER, modTags.Items.STORAGE_BLOCKS_COPPER);
         copy(Tags.Blocks.STORAGE_BLOCKS, modTags.Items.STORAGE_BLOCKS_COPPER);
 
+        // LEAD BLOCKS
+        copy(modTags.Blocks.ORES_LEAD, modTags.Items.ORES_LEAD);
+        copy(Tags.Blocks.ORES, modTags.Items.ORES_LEAD);
+        copy(modTags.Blocks.STORAGE_BLOCKS_LEAD, modTags.Items.STORAGE_BLOCKS_LEAD);
+        copy(Tags.Blocks.STORAGE_BLOCKS, modTags.Items.STORAGE_BLOCKS_LEAD);
+
         // INGOTS
         tag(modTags.Items.INGOT_SILVER).add(moditems.SILVER_INGOT.get());
         tag(Tags.Items.INGOTS).addTag(modTags.Items.INGOT_SILVER);
         tag(modTags.Items.INGOT_COPPER).add(moditems.COPPER_INGOT.get());
         tag(Tags.Items.INGOTS).addTag(modTags.Items.INGOT_COPPER);
+        tag(modTags.Items.INGOT_LEAD).add(moditems.LEAD_INGOT.get());
+        tag(Tags.Items.INGOTS).addTag(modTags.Items.INGOT_LEAD);
 
         // ORE CHUNKS
         tag(modTags.Items.ORECHUNK_SILVER).add(moditems.SILVER_ORE_CHUNK.get());
         tag(modTags.Items.ORECHUNK_IRON).add(moditems.IRON_ORE_CHUNK.get());
         tag(modTags.Items.ORECHUNK_COPPER).add(moditems.COPPER_ORE_CHUNK.get());
+        tag(modTags.Items.ORECHUNK_LEAD).add(moditems.LEAD_ORE_CHUNK.get());
 
     }
     

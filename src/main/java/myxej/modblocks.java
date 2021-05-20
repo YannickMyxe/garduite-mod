@@ -55,6 +55,27 @@ public class modblocks {
         .sound(SoundType.METAL)
         .strength(3, 10))
     );
+  
+    // LEAD
+    public static final RegistryObject<Block> LEAD_ORE = register("lead_ore", () ->
+        new Block(AbstractBlock.Properties
+        .of(Material.STONE)
+        .harvestLevel(2)
+        .requiresCorrectToolForDrops()
+        .harvestTool(ToolType.PICKAXE)
+        .sound(SoundType.STONE)
+        .strength(3, 10))
+    );
+
+    public static final RegistryObject<Block> LEAD_BLOCK = register("lead_block", () ->
+        new Block(AbstractBlock.Properties
+        .of(Material.METAL)
+        .harvestLevel(2)
+        .requiresCorrectToolForDrops()
+        .harvestTool(ToolType.PICKAXE)
+        .sound(SoundType.METAL)
+        .strength(3, 10))
+    );
 
         
     public static void register(){};
