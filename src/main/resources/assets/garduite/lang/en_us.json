@@ -3,5 +3,9 @@
     "item.garduite.silver_ore_chunk": "Silver Ore Chunk",
     "block.garduite.silver_ore": "Silver Ore",
     "block.garduite.silver_block": "Silver Block",
-    "item.garduite.iron_ore_chunk": "Iron Ore Chunk"
+    "item.garduite.iron_ore_chunk": "Iron Ore Chunk",
+    "item.garduite.copper_ingot": "Copper Ingot",
+    "item.garduite.copper_ore_chunk": "Copper Ore Chunk",
+    "block.garduite.copper_ore": "Copper Ore",
+    "block.garduite.copper_block": "Copper Block"
 }

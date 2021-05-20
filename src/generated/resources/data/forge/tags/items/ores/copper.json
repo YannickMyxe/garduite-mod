@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "garduite:copper_ore",
     "#forge:ores/silver",
     "#forge:ores/copper"
   ]

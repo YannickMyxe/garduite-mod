@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "garduite:copper_ingot"
+    }
+  },
+  "result": {
+    "item": "garduite:copper_block"
+  }
+}

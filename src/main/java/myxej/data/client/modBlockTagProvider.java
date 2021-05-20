@@ -16,10 +16,24 @@ public class modBlockTagProvider extends BlockTagsProvider{
 
     @Override
     protected void addTags() {
+
+        // ORES
         tag(modTags.Blocks.ORES_SILVER).add(modblocks.SILVER_ORE.get());
-        tag(Tags.Blocks.ORES).addTag(modTags.Blocks.ORES_SILVER);
+        tag(modTags.Blocks.ORES_COPPER).add(modblocks.COPPER_ORE.get());
+
+        tag(Tags.Blocks.ORES)
+            .addTag(modTags.Blocks.ORES_SILVER)
+            .addTag(modTags.Blocks.ORES_COPPER)
+        ;
+
+        // STORAGE BLOCKS
         tag(modTags.Blocks.STORAGE_BLOCKS_SILVER).add(modblocks.SILVER_BLOCK.get());
-        tag(Tags.Blocks.STORAGE_BLOCKS).addTag(modTags.Blocks.STORAGE_BLOCKS_SILVER);
+        tag(modTags.Blocks.STORAGE_BLOCKS_COPPER).add(modblocks.COPPER_BLOCK.get());
+
+        tag(Tags.Blocks.STORAGE_BLOCKS)
+            .addTag(modTags.Blocks.STORAGE_BLOCKS_SILVER)
+            .addTag(modTags.Blocks.STORAGE_BLOCKS_COPPER)
+        ;
     }
 
 }

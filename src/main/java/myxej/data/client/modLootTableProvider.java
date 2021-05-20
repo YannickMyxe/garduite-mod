@@ -8,10 +8,10 @@ import java.util.function.Supplier;
 import java.util.stream.Collectors;
 
 import com.google.common.collect.ImmutableList;
-import com.google.common.collect.Sets;
 import com.mojang.datafixers.util.Pair;
 
 import myxej.modblocks;
+import myxej.moditems;
 import myxej.registries;
 import net.minecraft.block.Block;
 import net.minecraft.data.DataGenerator;
@@ -44,7 +44,14 @@ public class modLootTableProvider extends LootTableProvider{
         @Override
         protected void addTables() {
             dropSelf(modblocks.SILVER_BLOCK.get());
-            dropSelf(modblocks.SILVER_ORE.get()); 
+            this.add(modblocks.SILVER_ORE.get(), (ModBlockLootTable) -> {
+                return createOreDrop(ModBlockLootTable, moditems.SILVER_ORE_CHUNK.get());
+             });
+            
+            dropSelf(modblocks.COPPER_BLOCK.get());
+            this.add(modblocks.COPPER_ORE.get(), (ModBlockLootTable) -> {
+                 return createOreDrop(ModBlockLootTable, moditems.COPPER_ORE_CHUNK.get());
+              });
         }
         
         @Override

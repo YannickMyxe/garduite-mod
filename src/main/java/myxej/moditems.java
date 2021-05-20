@@ -14,8 +14,17 @@ public class moditems {
     );
 
     public static final RegistryObject<Item> IRON_ORE_CHUNK = registries.ITEMS.register("iron_ore_chunk", () ->
-    new Item(new Item.Properties().tab(ItemGroup.TAB_MATERIALS))
-);
+        new Item(new Item.Properties().tab(ItemGroup.TAB_MATERIALS))
+    );
+
+    public static final RegistryObject<Item> COPPER_INGOT = registries.ITEMS.register("copper_ingot", () -> 
+        new Item(new Item.Properties().tab(ItemGroup.TAB_MATERIALS))
+    );
+
+    public static final RegistryObject<Item> COPPER_ORE_CHUNK = registries.ITEMS.register("copper_ore_chunk", () ->
+        new Item(new Item.Properties().tab(ItemGroup.TAB_MATERIALS))
+    );
+
 
     public static void register() {}
 

@@ -9,14 +9,18 @@ import net.minecraft.block.material.Material;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
+import net.minecraftforge.common.ToolType;
 import net.minecraftforge.fml.RegistryObject;
 
 public class modblocks {
     
+    // SILVER
     public static final RegistryObject<Block> SILVER_ORE = register("silver_ore", () ->
         new Block(AbstractBlock.Properties
         .of(Material.STONE)
         .harvestLevel(2)
+        .requiresCorrectToolForDrops()
+        .harvestTool(ToolType.PICKAXE)
         .sound(SoundType.STONE)
         .strength(3, 10))
     );
@@ -25,6 +29,29 @@ public class modblocks {
         new Block(AbstractBlock.Properties
         .of(Material.METAL)
         .harvestLevel(2)
+        .requiresCorrectToolForDrops()
+        .harvestTool(ToolType.PICKAXE)
+        .sound(SoundType.METAL)
+        .strength(3, 10))
+    );
+
+    // COPPER
+    public static final RegistryObject<Block> COPPER_ORE = register("copper_ore", () ->
+        new Block(AbstractBlock.Properties
+        .of(Material.STONE)
+        .harvestLevel(1)
+        .requiresCorrectToolForDrops()
+        .harvestTool(ToolType.PICKAXE)
+        .sound(SoundType.STONE)
+        .strength(3, 10))
+    );
+
+    public static final RegistryObject<Block> COPPER_BLOCK = register("copper_block", () ->
+        new Block(AbstractBlock.Properties
+        .of(Material.METAL)
+        .harvestLevel(1)
+        .requiresCorrectToolForDrops()
+        .harvestTool(ToolType.PICKAXE)
         .sound(SoundType.METAL)
         .strength(3, 10))
     );
